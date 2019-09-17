@@ -1,5 +1,7 @@
+##Find Broken Links for all MXDs in a certain folder
+
 import arcpy, os
-path = "S:\North_Rockies\Jonah\GIS\GIS_V2\\"
+path = "Path to folder conataining MXDs"
 for root, dirs, files in os.walk(path):
     for fileName in files:
         basename, extension = os.path.splitext(fileName)
