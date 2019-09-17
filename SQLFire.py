@@ -21,7 +21,7 @@ def SQLFireCSV(server,database,destTable,SQLQuery):
 #FILL OUT THESE VARIABLES BELOW
 SQLFire(myServ,myDB,myCSV.csv,"""
 
-SELECT * FROM [My].[SQL].[TABLE]
+SELECT * FROM [Your].[SQL].[TABLE]
 
 """)
 
@@ -36,4 +36,13 @@ def SQLFirePandas(server,database,SQLQuery):
 
     df = pd.read_sql(SQLQuery, cnxn)
         
-        
+
+#FILL OUT THESE VARIABLES BELOW
+SQLFirePandas(myServ,myDB,"""
+
+SELECT * FROM [Your].[SQL].[TABLE]
+
+""")
+
+
+
