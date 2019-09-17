@@ -1,7 +1,4 @@
-import os
-import arcpy
-import zipfile
-import shutil
+import os, arcpy, shutil
 
 
 path = "[YOUR PATH]"
