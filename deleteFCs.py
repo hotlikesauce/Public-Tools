@@ -1,3 +1,6 @@
+##This script will delete all FCs in a giver file path.
+##This works for SDE Databases, as well as folder paths.
+
 import arcpy
 
 arcpy.env.workspace = "[Your Path Here]"
