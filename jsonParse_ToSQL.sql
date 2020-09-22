@@ -1,10 +1,10 @@
 DECLARE @json NVARCHAR(MAX) 
 
-
+###RAW JSON TEXT GOES IN PLACE OF THIS VARIABLE###
 set @json = '""" + str(jsonText) + """'
 
 
-
+###THE $._____ FIELD ARE DERIVED FROM THE JSON DATA STRUCTURE###
 select * into #table1
 FROM OPENJSON(@json)
 WITH (
