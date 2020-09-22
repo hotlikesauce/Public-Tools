@@ -1,0 +1,1 @@
+FOR /L %N IN () DO PYTHON migrate_to_sql.py
