@@ -16,17 +16,16 @@ ID varchar(255) null
 
 Select *
 into #Wells
-FROM ArcGis_Master.dbo.JONAH_BHL
+FROM [db].[sch].[tb]
 
 SELECT * 
-INTO #SpacingTable from ArcGis_Master.DBO.Vertical_Spacing_WYW
+INTO #SpacingTable from [db].[sch].[tb]
 
 SELECT * 
-INTO #SpacingQQs from ArcGis_Master.DBO.Aliquot_Spacing_Join_WYW
+INTO #SpacingQQs from [db].[sch].[tb]
 
 SELECT * 
-INTO #StandardSpacing FROM ArcGis_Master.DBO.Vertical_Spacing_Standard_WYW
-
+INTO #StandardSpacing FROM [db].[sch].[tb]
 ------------------------------
 
 ALTER TABLE #Wells ADD  CONSTRAINT [LFC] PRIMARY KEY CLUSTERED 
